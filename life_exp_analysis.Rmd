@@ -1,5 +1,5 @@
 ---
-title: "Untitledlife_exp_analysis"
+title: "Life_exp_analysis"
 author: "Kevin Shrawder"
 date: "1/13/2020"
 output: pdf_document
@@ -8,5 +8,9 @@ output: pdf_document
 ```{r}
 library(tidyverse)
 library(gapminder)
+```
+
+```{r}
+read_csv()
 ```
 
