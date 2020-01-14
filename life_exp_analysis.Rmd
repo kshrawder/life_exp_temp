@@ -8,9 +8,14 @@ output: pdf_document
 ```{r}
 library(tidyverse)
 library(gapminder)
-```
+data("gapminder_unfiltered")
 
-```{r}
-read_csv()
+gapminder_unfiltered %>%
+  group_by(year) %>%
+  filter(lifeExp == max(lifeExp)) %>%
+  ungroup() %>%
+  select(year, country, lifeExp) %>%
+  arrange(year) ->
+  sumdat
 ```
 
